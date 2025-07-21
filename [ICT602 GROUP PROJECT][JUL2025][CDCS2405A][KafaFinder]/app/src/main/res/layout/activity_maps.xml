@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:background="@color/soft_green_bg">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        app:title=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#799567"
+        android:elevation="4dp"
+        app:popupTheme="@style/MyPopupMenuStyle">
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textSize="25sp"
+            android:textColor="#E6F0DC"
+            android:fontFamily="@font/massyabhan"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logorb" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/areaSpinner"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp" />
+
+    <!-- Search -->
+    <EditText
+        android:id="@+id/searchSchool"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaSpinner"
+        android:layout_centerHorizontal="true"
+        android:hint="Search school name"
+        android:padding="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/edit_text"
+        android:textColorHint="#799567"
+        android:textColor="#799567" />
+
+    <!-- Error text -->
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B00020"
+        android:textSize="14sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        android:layout_below="@id/searchSchool"
+        android:text="School not found." />
+
+    <!-- Google Maps Fragment -->
+<!--    <Spinner-->
+<!--        android:id="@+id/areaSpinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp" />-->
+
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/errorText" />
+
+    <!-- QR Scan Button -->
+    <ImageButton
+        android:id="@+id/btnScanQR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/errorText"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/scanner"
+        android:contentDescription="Scan QR"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="6dp" />
+
+</RelativeLayout>

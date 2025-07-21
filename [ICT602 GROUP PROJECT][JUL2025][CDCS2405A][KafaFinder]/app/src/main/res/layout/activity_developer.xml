@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/soft_green_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#799567"
+            android:elevation="4dp"
+            app:title=""
+            app:popupTheme="@style/MyPopupMenuStyle"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logorb"
+                    android:contentDescription="Logo" />
+
+                <TextView
+                    android:id="@+id/pageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textSize="25sp"
+                    android:textColor="#E6F0DC"
+                    android:fontFamily="@font/massyabhan"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Developer Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:padding="16dp">
+
+            <!-- Repeat this block for each developer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/rounded_box"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/damia"
+                    android:background="@drawable/rounded_image_bg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="16dp"
+                    android:clipToOutline="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nurneesa Damia Binti Mohd Hilmi"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2024745557"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textColor="#333" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- You can copy-paste the block above and just change name, ID, and image for other developers -->
+
+            <!-- Example Developer 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/rounded_box"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ira"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:clipToOutline="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nur Syahirah Binti Sahrudin"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textStyle="bold"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2024794977"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textSize="16sp"
+                        android:textColor="#333" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/rounded_box"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/riesya"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:clipToOutline="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nurul Ariesya Najwa Binti Mohd Nizam"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2024977903"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textSize="16sp"
+                        android:textColor="#333" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/rounded_box"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qila"
+                    android:clipToOutline="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nur Aqila Binti Rahman"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2024771683"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:textSize="16sp"
+                        android:textColor="#333" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Add 2 more blocks similarly -->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

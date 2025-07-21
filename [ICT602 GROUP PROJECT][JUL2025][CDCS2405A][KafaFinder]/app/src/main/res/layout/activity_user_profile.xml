@@ -1,0 +1,144 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_green_bg"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#799567"
+        android:elevation="4dp"
+        app:title=""
+        app:popupTheme="@style/MyPopupMenuStyle">
+
+        <!-- Toolbar title in center -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="25sp"
+            android:textColor="#E6F0DC"
+            android:fontFamily="@font/massyabhan"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logorb"
+            android:contentDescription="Logo" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 🖼 Background image -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🌿 Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp">
+
+            <!-- Profile Picture -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/user"
+                android:contentDescription="Profile Image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Name:"
+                android:textColor="@color/kafa_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Name Value -->
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Full Name"
+                android:textColor="@color/kafa_text"
+                android:textSize="16sp" />
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Email:"
+                android:textColor="@color/kafa_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Email Value -->
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Email Address"
+                android:textColor="@color/kafa_text"
+                android:textSize="16sp" />
+
+
+            <!-- Change Pic -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectImage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Change Profile Pic"
+                android:textColor="@color/black"
+                android:backgroundTint="#799567"
+                android:strokeColor="@color/white"
+                android:fontFamily="@font/kultum_ramadhan"
+                app:cornerRadius="16dp"
+                android:textAllCaps="false"/>
+
+            <!-- Logout -->
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btnLogout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="SIGN OUT"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:backgroundTint="@color/kafa_primary"-->
+<!--                app:cornerRadius="16dp"-->
+<!--                android:textAllCaps="false"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

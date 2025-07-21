@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/soft_green_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logorb"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="App Logo" />
+    <!-- Full Name Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="@color/kafa_primary"
+        android:layout_marginBottom="12dp"
+        app:hintTextColor="@color/kafa_primary"
+        app:hintTextAppearance="@color/kafa_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kafa_primary"
+            android:textColorHint="@color/kafa_primary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="@color/kafa_primary"
+        android:layout_marginBottom="12dp"
+        app:hintTextColor="@color/kafa_primary"
+        app:hintTextAppearance="@color/kafa_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/kafa_primary"
+            android:textColorHint="@color/kafa_primary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="@color/kafa_primary"
+        android:layout_marginBottom="24dp"
+        app:hintTextColor="@color/kafa_primary"
+        app:hintTextAppearance="@color/kafa_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/kafa_primary"
+            android:textColorHint="@color/kafa_primary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign Up Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/kafa_primary"
+        app:cornerRadius="16dp" />
+
+    <!-- Go to Login Text -->
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login here"
+        android:textColor="@color/kafa_primary"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

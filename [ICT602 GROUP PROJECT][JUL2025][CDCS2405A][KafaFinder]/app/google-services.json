@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933818542695",
+    "project_id": "kafafinder123456",
+    "storage_bucket": "kafafinder123456.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933818542695:android:f2c7c4663da51039b902c2",
+        "android_client_info": {
+          "package_name": "com.example.kafafinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-MJ-MUY-HcgcGN62UBGp_jxJtUe8eANg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
